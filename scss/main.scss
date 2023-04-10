@@ -1,7 +1,58 @@
+/************************/
+  /*SETTING & ULTILITES*/
+/************************/
+@use '../scss/global' as c;
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.125rem;
+}
+
+ul{list-style:none;}
+
+img{width:100%;}
+
+a{text-decoration:none;}
+
+@mixin row{
+    max-width:75rem;
+    margin:0 auto;
+}
+/************************/
+      /*Header*/
+/************************/
+.hero{
+    height:100vh;
+    background:url(/images/bg-hero-desktop.svg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    .content{
+       display:flex;
+       justify-content: center;
+       padding-top:1rem;
+       @include row();
+       .box:nth-child(1){
+        margin:4rem 0;
+        h1,p{color: c.color(--vary-dark-cyan);}
+        h1{
+            font-size:2.5rem;
+            width:80%;
+        }
+        p{
+          width:90%;
+          line-height:1.5rem;
+          margin:3rem;
+        }
+       }
+       .box:nth-child(2){
+        img{width:40.625rem;}
+       }
+    }
+
 }
 
 
