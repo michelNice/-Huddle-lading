@@ -1,0 +1,86 @@
+/*colors*/ /*********************/
+/*SETTING UP*/
+/*********************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/*********************/
+/*HERO*/
+/*********************/
+.hero {
+  height: 100vh;
+  background: hsl(193, 100%, 96%);
+  background-repeat: no-repeat;
+  background-image: url(/img/bg-hero-desktop.svg);
+  background-size: cover;
+}
+.hero .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.hero .content .box:nth(1) {
+  margin: 4rem 0;
+}
+.hero .content .box:nth(1) h1, .hero .content .box:nth(1) p {
+  color: hsl(192, 100%, 9%);
+}
+.hero .content .box:nth(1) h1 {
+  font-size: 2.5rem;
+  width: 80%;
+}
+.hero .content .box:nth(1) p {
+  width: 90%;
+  line-height: 1.5rem;
+  margin: 3rem 0;
+}
+.hero .content .box:nth(2) img {
+  width: 40.625rem;
+}
+
+/*********************/
+/*NAVBAR*/
+/*********************/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.navbar .logo {
+  width: 13.125rem;
+}
+.navbar .btn-top {
+  background: #fff;
+  padding: 0.8rem 2rem;
+  color: hsl(208, 11%, 55%);
+  border-radius: 12.5rem;
+  font-family: 700;
+}
+
+/*# sourceMappingURL=main.css.map */

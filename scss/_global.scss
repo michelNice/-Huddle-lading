@@ -1,0 +1,35 @@
+/*colors*/
+$color:(
+  --vary-pale-cyan: hsl(193, 100%, 96%),
+  --vary-dark-cyan: hsl(192, 100%, 9%),
+  --grayish-blue: hsl(208, 11%, 55%),
+  --Pink: hsl(322, 100%, 66%)
+
+);
+
+@function color($colors){
+  @return  map-get($color, $colors)
+};
+
+%btn-share{
+  border-radius:12.5rem;
+  background:color(--Pink);
+  color:#fff;
+  transition:200mc;
+  opacity:10;
+  cursor:pointer;
+  &:hover{opacity:0.8;}
+
+  .btn{
+    &-up{
+      @extend %btn-share;
+      padding:1.2rem 3rem;
+      font-size:0.9rem;
+    }
+    &-down{
+      font-size:1.4rem;
+      border:0;
+      @extend %btn-share;
+    }
+  }
+}

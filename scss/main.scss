@@ -1,7 +1,8 @@
-/************************/
-  /*SETTING & ULTILITES*/
-/************************/
+/*********************/
+    /*SETTING UP*/
+/*********************/
 @use '../scss/global' as c;
+
 *{
     padding:0;
     margin:0;
@@ -14,45 +15,65 @@ body{
 
 ul{list-style:none;}
 
-img{width:100%;}
-
 a{text-decoration:none;}
+
+
+img{width:100%;}
 
 @mixin row{
     max-width:75rem;
     margin:0 auto;
 }
-/************************/
-      /*Header*/
-/************************/
+/*********************/
+      /*HERO*/
+/*********************/
+
 .hero{
     height:100vh;
-    background:url(/images/bg-hero-desktop.svg);
-    background-size:cover;
+    background:c.color(--vary-pale-cyan);
     background-repeat:no-repeat;
+    background-image: url(/img/bg-hero-desktop.svg);
+    background-size: cover;
     .content{
-       display:flex;
-       justify-content: center;
-       padding-top:1rem;
-       @include row();
-       .box:nth-child(1){
-        margin:4rem 0;
-        h1,p{color: c.color(--vary-dark-cyan);}
-        h1{
-            font-size:2.5rem;
-            width:80%;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top:1rem;
+        @include row();
+        .box:nth(1){
+            margin:4rem 0;
+            h1,p{color:c.color(--vary-dark-cyan)}
+            h1{
+                font-size:2.5rem;
+                width:80%;
+            }
+            p{
+               width:90%;
+               line-height:1.5rem;
+               margin:3rem 0;
+            }
         }
-        p{
-          width:90%;
-          line-height:1.5rem;
-          margin:3rem;
+        .box:nth(2){
+            img{width:40.625rem;}
         }
-       }
-       .box:nth-child(2){
-        img{width:40.625rem;}
-       }
     }
-
 }
+/*********************/
+      /*NAVBAR*/
+/*********************/
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    @include row();
+    padding:3rem 0;
+    .logo{width:13.125rem;}
 
-
+    .btn-top{
+        background:#fff;
+        padding:0.8rem 2rem;
+        color:c.color(--grayish-blue);
+        border-radius:12.5rem;
+        font-family:700;
+    }
+}
