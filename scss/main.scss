@@ -104,6 +104,7 @@ a{text-decoration:none;}
         }
     }
 }
+.row-reverse{flex-direction:row-reverse;}
 /*********************/
       /*MOBILE*/
 /*********************/
@@ -154,6 +155,28 @@ a{text-decoration:none;}
             font-size:0.8rem;
         }
         .logo{width:6.5rem;}
+    }
+
+    .main-page{
+        padding:1.5rem  0.8rem 4rem 0.8rem;
+        .conteiner{
+            margin:2rem 0;
+            .content{
+                flex-direction: column-reverse;
+                padding:3rem 0.3rem;
+                .box:nth-child(1){
+                    margin:0 0.5rem;
+                    p{
+                        width:100%;
+                        margin:1rem 0;
+                    }
+                }
+                .box:nth-child(2){
+                    img{width:100%;}
+                }
+            }
+        }
+
     }
 
 }

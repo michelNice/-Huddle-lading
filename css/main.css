@@ -131,6 +131,10 @@ a {
   width: 25rem;
 }
 
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
 /*********************/
 /*MOBILE*/
 /*********************/
@@ -190,6 +194,26 @@ a {
   }
   .navbar .logo {
     width: 6.5rem;
+  }
+  .main-page {
+    padding: 1.5rem 0.8rem 4rem 0.8rem;
+  }
+  .main-page .conteiner {
+    margin: 2rem 0;
+  }
+  .main-page .conteiner .content {
+    flex-direction: column-reverse;
+    padding: 3rem 0.3rem;
+  }
+  .main-page .conteiner .content .box:nth-child(1) {
+    margin: 0 0.5rem;
+  }
+  .main-page .conteiner .content .box:nth-child(1) p {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .main-page .conteiner .content .box:nth-child(2) img {
+    width: 100%;
   }
 }
 
