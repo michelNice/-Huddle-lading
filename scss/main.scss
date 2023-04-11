@@ -18,13 +18,10 @@ ul{list-style:none;}
 a{text-decoration:none;}
 
 
-img{width:100%;}
-
 @mixin row{
     max-width:75rem;
     margin:0 auto;
 }
-
 
 /*********************/
       /*HERO*/
@@ -72,9 +69,91 @@ img{width:100%;}
 
     .btn-top{
         background:#fff;
-        padding:0.8rem 2rem;
+        padding:0.8rem 3.5rem;
         color:c.color(--grayish-blue);
         border-radius:12.5rem;
-        font-family:700;
+        font-weight:700;
+        filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));
     }
+}
+/*********************/
+     /*MAIN PAGE*/
+/*********************/
+.main-page{
+    @include row();
+    padding:7rem 0 12rem 0;
+    .conteiner{
+        margin:2rem 0;
+        border:3px solid  rgb(243, 239, 239);
+        border-radius:0.8rem;
+        .content{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:4rem 3rem;
+            .box:nth-child(1){
+                p{
+                    color:c.color(--grayish-blue);
+                    margin:1rem 0;
+                    width:75%;
+                }
+            }
+            .box:nth-child(2){
+                img{width:25rem;}
+            }
+        }
+    }
+}
+/*********************/
+      /*MOBILE*/
+/*********************/
+@media(max-width:75rem){
+    .hero{
+    .navbar{padding:2rem 0.8rem;}
+    .content{padding:0 0.8rem;}
+    }
+}
+
+
+@media(max-width:64rem){
+    body{font-size:0.938rem;}
+    .main-page,
+    .content{padding:0 0.8rem;}
+    
+    .hero{
+     height:100%;
+     .content{
+       .box:nth-child(1){margin:4rem 0;}
+       .box:nth-child(2){
+         img{width:100%;}
+       }
+     }
+   }
+}
+
+@media(max-width:48rem){
+    .hero{
+        background-image:url(/img/bg-hero-mobile.svg);
+        .content{
+            flex-direction:column-reverse;
+            padding:2rem 0.8rem;
+            text-align:center;
+            .box:nth-child(1){
+                margin:2rem 0;
+                h1,p{width:100%;}
+                h1{font-size:1.5rem;}
+                p{margin:2rem 0;}
+            }
+        }
+    }
+
+    .navbar{
+        padding:0 0.8rem;
+        .btn-top{
+            padding:0.3rem 1rem;
+            font-size:0.8rem;
+        }
+        .logo{width:6.5rem;}
+    }
+
 }
