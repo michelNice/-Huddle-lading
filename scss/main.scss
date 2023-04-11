@@ -24,9 +24,11 @@ img{width:100%;}
     max-width:75rem;
     margin:0 auto;
 }
+
+
 /*********************/
       /*HERO*/
-/*********************/
+/*********************/     
 
 .hero{
     height:100vh;
@@ -36,24 +38,23 @@ img{width:100%;}
     background-size: cover;
     .content{
         display:flex;
-        justify-content: center;
-        flex-direction: column;
+        justify-content:center;
         padding-top:1rem;
         @include row();
-        .box:nth(1){
+        .box:nth-child(1){
             margin:4rem 0;
-            h1,p{color:c.color(--vary-dark-cyan)}
+            h1,p{color: c.color(--vary-dark-cyan);}
             h1{
                 font-size:2.5rem;
                 width:80%;
             }
             p{
-               width:90%;
-               line-height:1.5rem;
-               margin:3rem 0;
+              width:95%;
+              line-height: 1.5rem;
+              margin:3rem 0;
             }
         }
-        .box:nth(2){
+        .box:nth-child(2){
             img{width:40.625rem;}
         }
     }
