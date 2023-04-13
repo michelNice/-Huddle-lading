@@ -142,6 +142,48 @@ a{text-decoration:none;}
         display:flex;
         justify-content:space-between;
         @include row();
+        color: #fff;
+        .logo{
+            filter: brightness(0) saturate(100%) invert(100%) sepia(93%) saturate(2%)
+            hue-rotate(65deg) brightness(111%) contrast(101%);
+            padding:1.5rem 0;
+            width:14rem;
+        }
+        .box:nth-child(1){
+            .content{
+                display:flex;
+                padding-bottom:1rem;
+                img{
+                    width:0.75rem;
+                    height:1.5rem;
+                    margin-right:1rem;
+                }
+                p{width:#fff;}
+            }
+        }
+        .box ul li{
+            padding-bottom:1rem;
+            a{
+                color:#fff;
+                transition:200mc;
+                &:hover{color: c.color(--Pink);}
+            }
+        }
+        .box:nth-child(4){
+            ul{display:flex;}
+            li{margin-right:1rem;}
+            i{
+                border:1px solid #fff;
+                width:2.5rem;
+                height:2.5rem;
+                text-align: center;
+                border-radius:50%;
+                line-height:2.3rem;
+                font-weight:1.3rem;
+                &:hover{border:1px solid c.color(--Pink);}
+            }
+        }
+
     }
 }
 /*********************/
