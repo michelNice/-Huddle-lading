@@ -20,7 +20,7 @@ $color:(
   opacity:10;
   transition:200mc;
   cursor: pointer;
-  &:hover{opacity:8;}
+  &:hover{opacity:0.8;}
 }
 
 .btn{
@@ -28,6 +28,12 @@ $color:(
     @extend %btn-share;
     padding:1.2rem 3.5rem;
     font-size:0.9rem;
+  }
+  &-down{
+    @extend %btn-share;
+    padding:1.6rem 6rem;
+    font-size:1.3rem;
+    border:1px solid color(--Pink);
   }
 }
 
