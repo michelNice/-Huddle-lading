@@ -99,19 +99,17 @@ a{text-decoration:none;}
                 }
             }
             .box:nth-child(2){
-                img{
-                    width:25rem;
-                }
-               
+                img{width:25rem;}
             }
-            .box:nth-child(3){
-                margin:0 0 5rem 0;
-            }
-            .left{
-               margin-right:5rem;
-            }
+            //.box:nth-child(3){margin:0 0 5rem 0;}
+
+            .left{margin-right:5rem;}
         }
     }
+    .conteiner:nth-child(3){
+        margin:0 0 10rem 0;
+    }
+
 }
 .row-reverse{flex-direction:row-reverse;}
 /*********************/
@@ -265,6 +263,7 @@ a{text-decoration:none;}
                  }
             }
         }
+        .conteiner:nth-child(3){margin:0 0 6rem 0;}
 
     }
 

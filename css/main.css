@@ -139,11 +139,11 @@ a {
 .main-page .conteiner .content .box:nth-child(2) img {
   width: 25rem;
 }
-.main-page .conteiner .content .box:nth-child(3) {
-  margin: 0 0 5rem 0;
-}
 .main-page .conteiner .content .left {
   margin-right: 5rem;
+}
+.main-page .conteiner:nth-child(3) {
+  margin: 0 0 10rem 0;
 }
 
 .row-reverse {
@@ -316,6 +316,9 @@ a {
   }
   .main-page .conteiner .content .left {
     margin-right: 0rem;
+  }
+  .main-page .conteiner:nth-child(3) {
+    margin: 0 0 6rem 0;
   }
   .card {
     width: 90%;
