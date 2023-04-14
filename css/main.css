@@ -30,6 +30,9 @@
     padding: 0.75rem;
     font-size: 1rem;
   }
+  br {
+    display: none;
+  }
 }
 /*********************/
 /*SETTING UP*/
@@ -228,10 +231,9 @@ a {
 .footer .conteiner .box:nth-child(4) i:hover {
   border: 1px solid hsl(322, 100%, 66%);
 }
-.footer .conteiner .last-footer {
+.footer .last-footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
 }
 
 /*********************/
@@ -243,6 +245,9 @@ a {
   }
   .hero .content {
     padding: 0 0.8rem;
+  }
+  .last-footer {
+    padding: 0 0.7rem;
   }
 }
 @media (max-width: 64rem) {
@@ -330,8 +335,9 @@ a {
   .footer {
     padding: 10rem 0 2rem 0;
   }
-  .footer .img {
-    margin-right: 0.8rem;
+  .footer .conteiner .logo {
+    width: 12rem;
+    padding: 1rem 0.8rem;
   }
   .footer .conteiner {
     flex-direction: column;
