@@ -149,27 +149,23 @@ a {
   margin: 0 0 10rem 0;
 }
 
-.row-reverse {
-  flex-direction: row-reverse;
-}
-
-/*********************/
-/*CARD*/
-/*********************/
+/************************/
+/*card*/
+/************************/
 .card {
   border: 3px solid rgb(243, 239, 239);
-  width: 50rem;
+  width: 800px;
   text-align: center;
-  background: #fff;
-  border-radius: 2rem;
-  padding: 4rem 6rem;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+  border-radius: 1rem;
+  padding: 4rem;
+  background: #fff;
 }
 .card h2 {
-  font-size: 2rem;
   padding-bottom: 2rem;
+  font-size: 2rem;
 }
 
 /*********************/
@@ -236,18 +232,15 @@ a {
   justify-content: end;
 }
 
-/*********************/
+/************************/
 /*MOBILE*/
-/*********************/
+/************************/
 @media (max-width: 75rem) {
   .hero .navbar {
     padding: 2rem 0.8rem;
   }
-  .hero .content {
+  .conteiner {
     padding: 0 0.8rem;
-  }
-  .last-footer {
-    padding: 0 0.7rem;
   }
 }
 @media (max-width: 64rem) {
@@ -268,9 +261,13 @@ a {
     width: 100%;
   }
 }
+.main-page {
+  padding: 7rem 0.8rem 12rem 0.8rem;
+}
+
 @media (max-width: 48rem) {
   .hero {
-    background-image: url(/img/bg-hero-mobile.svg);
+    background-image: url(/images/bg-hero-mobile.svg);
   }
   .hero .content {
     flex-direction: column-reverse;
@@ -292,15 +289,15 @@ a {
   .navbar {
     padding: 0 0.8rem;
   }
+  .navbar .logo {
+    width: 110px;
+  }
   .navbar .btn-top {
     padding: 0.3rem 1rem;
     font-size: 0.8rem;
   }
-  .navbar .logo {
-    width: 6.5rem;
-  }
   .main-page {
-    padding: 1.5rem 0.8rem 4rem 0.8rem;
+    padding: 2rem 0.8rem 6rem 0.8rem;
   }
   .main-page .conteiner {
     margin: 2rem 0;
@@ -313,31 +310,24 @@ a {
     margin: 0 0.5rem;
   }
   .main-page .conteiner .content .box:nth-child(1) p {
-    width: 100%;
     margin: 1rem 0;
+    width: 100%;
   }
   .main-page .conteiner .content .box:nth-child(2) img {
     width: 100%;
   }
-  .main-page .conteiner .content .left {
-    margin-right: 0rem;
-  }
   .main-page .conteiner:nth-child(3) {
-    margin: 0 0 6rem 0;
+    margin: 0 0 10rem 0;
   }
   .card {
     width: 90%;
     padding: 1rem;
   }
   .card h2 {
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
   .footer {
     padding: 10rem 0 2rem 0;
-  }
-  .footer .conteiner .logo {
-    width: 12rem;
-    padding: 1rem 0.8rem;
   }
   .footer .conteiner {
     flex-direction: column;
@@ -351,7 +341,7 @@ a {
     justify-content: center;
     align-items: center;
   }
-  .footer .last-footer {
+  .last-footer {
     text-align: center;
   }
 }
