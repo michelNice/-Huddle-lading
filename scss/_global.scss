@@ -31,8 +31,8 @@ $color:(
   }
   &-down{
     @extend %btn-share;
-    padding:1.6rem 6rem;
-    font-size:1.3rem;
+    padding:1.4rem 4rem;
+    font-size:1.2rem;
     border:1px solid color(--Pink);
   }
 }
@@ -40,10 +40,11 @@ $color:(
 
 @media(max-width:48rem){
   .btn{
-    &-up{
-      //@extend %btn-share;
-      //padding:1.5rem 3.5rem;
-      font-size:0.7rem;
+    &-up{font-size:0.7rem;}
+    
+    &-down{
+      padding:0.75rem;
+      font-size:1rem;
     }
   }
   

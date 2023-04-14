@@ -155,7 +155,7 @@ a{text-decoration:none;}
                 padding-bottom:1rem;
                 img{
                     width:0.75rem;
-                    height:1.5rem;
+                    height:1.3rem;
                     margin-right:1rem;
                 }
                 p{width:#fff;}
@@ -183,7 +183,12 @@ a{text-decoration:none;}
                 &:hover{border:1px solid c.color(--Pink);}
             }
         }
-
+        .last-footer{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
     }
 }
 /*********************/
@@ -261,6 +266,30 @@ a{text-decoration:none;}
             }
         }
 
+    }
+
+    .card{
+        width:90%;
+        padding:1rem;
+        h2{font-size:0.80rem;}
+    }
+
+    .footer{
+       .img{margin-right:0.8rem;}
+        padding:10rem 0 2rem 0;
+        .conteiner{
+            flex-direction:column;
+            .box ul{
+                padding:0 0.8rem;
+                margin:1rem 0;
+            }
+            .box:nth-child(4){
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+        }
+        .last-footer{text-align:center;}
     }
 
 }

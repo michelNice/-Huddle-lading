@@ -17,14 +17,18 @@
   font-size: 0.9rem;
 }
 .btn-down {
-  padding: 1.6rem 6rem;
-  font-size: 1.3rem;
+  padding: 1.4rem 4rem;
+  font-size: 1.2rem;
   border: 1px solid hsl(322, 100%, 66%);
 }
 
 @media (max-width: 48rem) {
   .btn-up {
     font-size: 0.7rem;
+  }
+  .btn-down {
+    padding: 0.75rem;
+    font-size: 1rem;
   }
 }
 /*********************/
@@ -190,7 +194,7 @@ a {
 }
 .footer .conteiner .box:nth-child(1) .content img {
   width: 0.75rem;
-  height: 1.5rem;
+  height: 1.3rem;
   margin-right: 1rem;
 }
 .footer .conteiner .box:nth-child(1) .content p {
@@ -223,6 +227,11 @@ a {
 }
 .footer .conteiner .box:nth-child(4) i:hover {
   border: 1px solid hsl(322, 100%, 66%);
+}
+.footer .conteiner .last-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*********************/
@@ -307,6 +316,34 @@ a {
   }
   .main-page .conteiner .content .left {
     margin-right: 0rem;
+  }
+  .card {
+    width: 90%;
+    padding: 1rem;
+  }
+  .card h2 {
+    font-size: 0.8rem;
+  }
+  .footer {
+    padding: 10rem 0 2rem 0;
+  }
+  .footer .img {
+    margin-right: 0.8rem;
+  }
+  .footer .conteiner {
+    flex-direction: column;
+  }
+  .footer .conteiner .box ul {
+    padding: 0 0.8rem;
+    margin: 1rem 0;
+  }
+  .footer .conteiner .box:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .last-footer {
+    text-align: center;
   }
 }
 
