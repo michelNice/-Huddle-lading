@@ -231,7 +231,7 @@ a{text-decoration:none;}
     
   .navbar{
     padding:0 0.8rem;
-    .logo{width:110px;}
+    .logo{width:6.5rem;}
     .btn-top{
       padding:0.3rem 1rem;
       font-size:0.8rem;
@@ -261,9 +261,12 @@ a{text-decoration:none;}
   .card{
     width:90%;
     padding:1rem;
-    h2{font-size:1.3rem;}
+    h2{font-size:1rem;}
   }
   .footer{
+    .conteiner{
+        .logo{width:10rem;}
+    }
     padding:10rem 0 2rem 0;
     .conteiner{
       .box ul{
