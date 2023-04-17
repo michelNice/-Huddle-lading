@@ -81,8 +81,6 @@ a{text-decoration:none;}
 /*********************/
 .main-page{
     @include row();
-    //padding:1rem 0 12rem 0;
-    position: relative;w
     .conteiner{
         margin:2rem 0;
         border:3px solid  rgb(243, 239, 239);
@@ -96,15 +94,14 @@ a{text-decoration:none;}
                 p{
                     color:c.color(--grayish-blue);
                     margin:1rem 0;
-                    width:75%;
+                    width:85%;
                 }
             }
-            //.box:nth-child(2){img{width:40%;}}
-            .box{img{with:40%}}
-            
-            .right{
-              padding-right: 5rem;
-            }
+            .box:nth-child(2)
+            {img{width:80%;}
+            p{width:95%}
+          }
+
         }
     }
     .conteiner:nth-child(3){margin:0 0 10rem 0;}
@@ -262,6 +259,8 @@ a{text-decoration:none;}
           }
         }
         .box:nth-child(2){img{width:100%;}}
+
+        .right{padding-right:0;}
       }
     }
    .conteiner:nth-child(3){margin:0 0 10rem 0;} 
