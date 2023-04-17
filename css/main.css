@@ -112,7 +112,7 @@ a {
   color: hsl(206, 4%, 31%);
   border-radius: 12.5rem;
   font-weight: 700;
-  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
 }
 
 /*********************/
@@ -289,6 +289,9 @@ a {
   }
   .hero .content .box:nth-child(1) p {
     margin: 2rem 0;
+  }
+  .hero .content .left {
+    margin-right: 0;
   }
   .navbar {
     padding: 0 0.8rem;
