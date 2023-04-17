@@ -1,4 +1,3 @@
-
 /*********************/
     /*SETTING UP*/
 /*********************/
@@ -82,7 +81,7 @@ a{text-decoration:none;}
 /*********************/
 .main-page{
     @include row();
-    padding:7rem 0 12rem 0;
+    //padding:1rem 0 12rem 0;
     .conteiner{
         margin:2rem 0;
         border:3px solid  rgb(243, 239, 239);
@@ -96,10 +95,10 @@ a{text-decoration:none;}
                 p{
                     color:c.color(--grayish-blue);
                     margin:1rem 0;
-                    width:85%;
+                    width:75%;
                 }
             }
-            .box:nth-child(2){img{width:30rem;}}
+            .box:nth-child(2){img{width:25rem;}}
            
             
             .right{padding-right: 5rem;}
@@ -108,10 +107,7 @@ a{text-decoration:none;}
     .conteiner:nth-child(3){margin:0 0 10rem 0;}
 
 }
-.row-reverse{
-  flex-direction: row-reverse;
-  
-}
+.row-reverse{flex-direction: row-reverse;}
 
 /************************/
         /*card*/
@@ -232,6 +228,8 @@ a{text-decoration:none;}
       }
 
       .left{margin-right:0;}
+
+      .right{padding-right:0;}
     }
    
   } 
@@ -263,6 +261,8 @@ a{text-decoration:none;}
       }
     }
    .conteiner:nth-child(3){margin:0 0 10rem 0;} 
+
+   
   }
   
   .card{
@@ -291,5 +291,3 @@ a{text-decoration:none;}
   .last-footer{text-align:center;}
   
   }
-  
-  
