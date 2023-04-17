@@ -120,27 +120,28 @@ a {
 .main-page {
   max-width: 75rem;
   margin: 0 auto;
+  position: relative;
 }
-.main-page .conteiner {
+.main-page w .conteiner {
   margin: 2rem 0;
   border: 3px solid rgb(243, 239, 239);
   border-radius: 0.8rem;
 }
-.main-page .conteiner .content {
+.main-page w .conteiner .content {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 4rem 3rem;
 }
-.main-page .conteiner .content .box:nth-child(1) p {
+.main-page w .conteiner .content .box:nth-child(1) p {
   color: hsl(208, 11%, 55%);
   margin: 1rem 0;
   width: 75%;
 }
-.main-page .conteiner .content .box:nth-child(2) img {
-  width: 25rem;
+.main-page w .conteiner .content .box img {
+  with: 40%;
 }
-.main-page .conteiner .content .right {
+.main-page w .conteiner .content .right {
   padding-right: 5rem;
 }
 .main-page .conteiner:nth-child(3) {
