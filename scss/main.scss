@@ -70,10 +70,10 @@ a{text-decoration:none;}
     .btn-top{
         background:#fff;
         padding:0.8rem 3.5rem;
-        color:c.color(--grayish-blue);
         border-radius:12.5rem;
         font-weight:700;
         filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
+        color:c.color(--grayish-blue-change);
     }
 }
 
@@ -96,18 +96,22 @@ a{text-decoration:none;}
                 p{
                     color:c.color(--grayish-blue);
                     margin:1rem 0;
-                    width:75%;
+                    width:85%;
                 }
             }
-            .box:nth-child(2){img{width:25rem;}}
+            .box:nth-child(2){img{width:30rem;}}
            
-            .left{margin-right:5rem;}
+            
+            .right{padding-right: 5rem;}
         }
     }
     .conteiner:nth-child(3){margin:0 0 10rem 0;}
 
 }
-.row-reverse{flex-direction: row-reverse;}
+.row-reverse{
+  flex-direction: row-reverse;
+  
+}
 
 /************************/
         /*card*/

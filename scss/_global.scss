@@ -1,10 +1,10 @@
-/*colors*/
+
 $color:(
   --vary-pale-cyan: hsl(193, 100%, 96%),
   --vary-dark-cyan: hsl(192, 100%, 9%),
-  --grayish-blue: hsl(206, 4%, 31%),
-  --Pink: hsl(322, 100%, 66%)
-
+  --grayish-blue: hsl(208, 11%, 55%),
+  --Pink: hsl(322, 100%, 66%),
+  --grayish-blue-change: hsl(206, 4%, 31%),
 );
 
 @function color($colors){
